@@ -21,7 +21,7 @@ body{
         }
         
 }
-.carrusel {
+.carrusel-dos {
     h5{
 color: black;
 // font-weight: 400px;
@@ -115,7 +115,7 @@ border-style: groove;
       position: absolute;
       left: $widthImg / 2;
       top: 80%;
-      width: $widthImg 0.95;
+      width: $widthImg 0.98;
       height: $widthImg * 1.10;
       opacity: .9
     }
@@ -128,3 +128,64 @@ border-style: groove;
   }
 }
 
+.cuidado-cortinas{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+ border-style: groove;
+ padding: 10px;
+ align-content: space-between;
+ text-align: center;
+ justify-items: center;
+ flex-direction: initial;
+ flex-grow: initial;
+ flex-flow: row;
+ order: initial;
+ column-width: 1px;
+position: relative;
+
+ 
+  img{
+    border-radius: 4px;
+    border: 2px;
+ }
+.cuidado-uno{
+    padding: 10px;
+}
+.cuidado-dos{
+    padding: 10px;
+}
+.cuidado-tres{
+    padding: 10px;
+}
+.cuidado-cuatro{
+    padding: 10px;
+}
+.cuidado-cinco{
+    padding: 10px;
+}
+
+}
+h3{
+    text-align: center;
+    padding: 100px;
+}
+.whatsapp{
+
+        background: radial-gradient(chartreuse, green);
+        color: rgb(250, 244, 244);
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: mB;
+        animation-duration: 4s;
+        animation-delay: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }

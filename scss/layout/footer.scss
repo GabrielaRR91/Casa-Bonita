@@ -9,3 +9,24 @@ footer{
 .colorf {
     color: black;
 }
+.datos-pie {
+    display: flex;
+align-items: center;
+list-style-type: none;
+text-align: center;
+text-decoration: none;
+text-align-last: center;
+list-style: none;
+padding: 16px;
+    ul{ 
+        text-decoration: none;
+        li{
+            list-style: none;
+         }
+    }
+
+}
+.contactos{
+align-items: center;
+  
+}

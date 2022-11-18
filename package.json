@@ -1,11 +1,19 @@
 {
   "name": "casa-bonita",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielaRR91/Casa-Bonita.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GabrielaRR91/Casa-Bonita/issues"
+  },
+  "homepage": "https://github.com/GabrielaRR91/Casa-Bonita#readme",
+  "description": ""
 }
