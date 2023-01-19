@@ -15,7 +15,7 @@
         <nav class="navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                <img src="../asset/img/logo.si.jpg" alt="Logo" width="60" height="50" class="d-inline-block align-text-top">
+                <img class="logo-nav" src="../asset/img/logo-marron.webp" alt="Logo" width="60" height="50" class="d-inline-block align-text-top">
                 </a>
                 <ul class="nav justify-content-end">
                     <li>
@@ -40,10 +40,53 @@
             </div>
         </nav>
     </header>
-        <h1>CORTINAS INTELIGENTES</h1>
-    <p>El innovador sistema con el que contamos de cortinas inteligentes va a hacer de tu casa un lugar moderno y futurista,
-        <br> Este sistema cuenta con un motor el cual se encuentra completamente oculto a la vista, brindando estetica a la vez de funcionalidad.</p>
-
+    <div class="logo-contacto"><img src="../asset/img/logo-este-si.jpeg" alt="logo de la casa"></div>
+        <h1>CONTACTO</h1>
+    <p>Completa el formulario y nuestra area de atencion al cliente se comunicara a la brevedad para asesorarte.
+        <br><strong>¡Gracias!</strong></p>
+        
+        <section class="cuestionario">
+            <fieldset>
+                <legend><strong>Formulario de contacto</strong></legend>
+                <label for="nombreApellido">  - Nombre y Apellido</label>
+            <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Carlos Perez">
+                <br>
+            <label for="email">  - eMail</label>
+            <input type="text" id="email" name="email" placeholder="nombre@correo.com">
+            <br>
+            <label for="telefono">  - Teléfono de contacto</label>
+            <input type="telefono" id="telefono" name="telefono" placeholder="+(caracteristica pais),número">
+            <br>
+            <label for="disponibilidad-horaria"> - Disponibilidad horaria para contactarlo/a: </label>
+            
+                <label for="mañana">Mañana</label>
+                <input type="radio" id="disponibilidad-horaria" name="disponibilidad-horaria"
+                value="mañana">
+                <label for="tarde">Tarde</label>
+                <input type="radio" id="disponibilidad-horaria" name="disponibilidad-horaria" value="tarde">
+                <label for="noche">Noche</label>
+                <input type="radio" id="disponibilidad-horaria" name="disponibilidad-horaria" value="noche">
+                <br>
+            <label for="departamento">  - Departamento a colocar las cortinas</label>
+            <select name="departamento" id="departamento">
+                <option value="capital">Capital</option>
+                <option value="godoy-cruz">Godoy Cruz</option>
+                <option value="las-heras">Las Heras</option>
+                <option value="guaymallen">Guaymallen</option>
+                <option value="general-alvear">General Alvear</option>
+                <option value="san-martin">San Martin</option>
+                <option value="junin">Junin</option>
+                <option value="la-paz">La Paz</option>
+                <option value="lavalle">Lavalle</option>
+                <option value="lujan-de-cuyo">Lujan de Cuyo</option>
+                <option value="maipu">Maipu</option>
+                <option value="malargue">Malargue</option>
+                <option value="rivadavia">Rivadavia</option>
+                <option value="otros">Otros</option>
+            </select>
+            <input type="submit" value="Enviar">
+            </fieldset>
+        </section>
         <footer>
             <div class="pie">
                 <p>
@@ -85,7 +128,7 @@
                           <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM5.5 4.002h3.11c1.71 0 2.741.973 2.741 2.46 0 1.138-.667 1.94-1.495 2.24L11.5 12H9.98L8.52 8.924H6.836V12H5.5V4.002Zm1.335 1.09v2.777h1.549c.995 0 1.573-.463 1.573-1.36 0-.913-.596-1.417-1.537-1.417H6.835Z"/>
                         </svg><i class="bi bi-r-circle">CASA BONITA</i>
                         <strong>®CASA BONITA</strong> 
-                      <img class="img-pie" src="../casa-bonita/asset/img/logo-este-si.jpeg" alt="Logo de la casa" width="40" height="40">
+                      <img class="img-pie" src="../asset/img/logo-este-si.jpeg" alt="Logo de la casa" width="40" height="40">
                         </div>
                                       
         </footer>
@@ -95,5 +138,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="../js/mains-contacto.js"></script>
 </body>
 </html>

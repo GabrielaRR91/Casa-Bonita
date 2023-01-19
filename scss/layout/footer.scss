@@ -1,6 +1,6 @@
 footer{
     .pie{
-        background-color:  rgb(173, 129, 71);
+        background: radial-gradient(rgb(146, 107, 63), rgb(82, 34, 2));
         text-align: center;
         text-decoration-color: rgb(235, 238, 240);
         color: aliceblue;
@@ -22,11 +22,23 @@ padding: 16px;
         text-decoration: none;
         li{
             list-style: none;
-         }
+            }
     }
 
 }
 .contactos{
 align-items: center;
-  
+}
+.img-pie{
+border-radius: 70%;
+}
+.tarjetas{
+    display: flex;
+    background-color: rgb(146, 107, 63);
+    justify-content: center;
+    padding: 10px;
+    img{
+        margin: 10px;
+        border-radius: none;
+    }
 }
