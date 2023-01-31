@@ -228,6 +228,12 @@ h3 {
   border-radius: 30%;
 }
 
+#contenedor-js {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 1;
+}
+
 header nav {
   background: radial-gradient(rgb(146, 107, 63), rgb(82, 34, 2));
 }
