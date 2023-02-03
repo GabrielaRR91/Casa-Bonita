@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
     <title>Casas Bonita</title>
@@ -88,17 +89,59 @@
             </fieldset>
         </section>
         <table id="contenedor-js">
-<thead>
-  <tr>
-    <th>Cortinas</th>
-    <th>Precio</th>
-    <th>Tipo</th>
-  </tr>
-</thead>
-<tbody>
-
-</tbody>
-</table>
+          <thead>
+            <tr>
+              <th>Cortinas</th>
+              <th>Precio</th>
+              <th>Stock</th>
+              <th>Unidades</th>
+              <!-- <th>Colocacion</th> -->
+            </tr>
+          </thead>
+          <tbody id="datos">
+          
+          </tbody>
+          </table>
+          <h4>Carrito</h4>
+          <table id="carrito">
+            <thead>
+              <tr>
+                <th>Cortinas</th>
+                <th>Unidades</th>
+          
+              </tr>
+            </thead>
+            <tbody id="dat">
+            
+            </tbody>
+            </table>
+            
+            <h2>CALENDARIO</h2>
+            <p>A continuacion le mostramos los dias que tenemos disponibles para llevar a cabo la colocacion</p>
+            <div class="semana">
+              <div class="dia">
+          <p>L</p>
+              </div>
+              <div class="dia">
+          <p>M</p>
+              </div>
+              <div class="dia">
+          <p>M</p>
+              </div>
+              <div class="dia">
+          <p>J</p>
+              </div>
+              <div class="dia">
+          <p>V</p>
+              </div>
+              <div class="dia">
+          <p>S</p>
+              </div>
+              <div class="dia">
+          
+              </div>
+          
+            </div>
 
 
         
@@ -153,6 +196,8 @@
     <script>
         AOS.init();
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
     <script src="../js/mains-contacto.js"></script>
 </body>
 </html>
