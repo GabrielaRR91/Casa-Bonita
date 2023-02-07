@@ -8,8 +8,8 @@
 // }
 
 // const cortinas = [ 
-//     new cortina ("inteligentes".toLowerCase(), 50000, 10), 
-//     new cortina ("roll".toLowerCase(), 5000, 100),
+//     new Cortina ("inteligentes".toLowerCase(), 50000, 10), 
+//     new Cortina ("roll".toLowerCase(), 5000, 100),
 //     new cortina ("verticales".toLowerCase(), 10500, 200),
 //     new cortina ("orientales".toLowerCase(), 150000, 5),
 //     new cortina ("toldos".toLowerCase(), 250000, 15),  

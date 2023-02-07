@@ -68,6 +68,7 @@ inputNumber.value = 0;
 inputNumber.addEventListener("change", () =>{
 
 modificarCarrito(cortina, inputNumber.value);
+console.log(carrito);
 });
 thUnidades.innerHTML = "";
 thUnidades.append(inputNumber);
@@ -80,9 +81,10 @@ datos.append(tr);
 function renderizarCarrito(){
 tbodyCarrito.innerHTML = "";
 carrito.forEach((productoCarrito) => {
+
     const tr = document.createElement("tr");
     carrito.innerHTML += 
-    `<th>${cortina.producto}</th>`
+    `<th>${productoCarrito.producto}</th>`
 
 const thUnidades = document.createElement("tr");
 
@@ -125,7 +127,7 @@ function crearDias() {
     semana.forEach((cadaDia) =>{
         console.log(cadaDia);
         const divDia = document.createElement("div");
-        divDia.className = "dia dia-libre";
+        divDia.className = cadaDia === "domingo" || cadaDia === "miercoles" ? "diaOcupado" : "dia dia-libre";
         divDia.innerText = cadaDia
         divSemana.append(divDia);
 
@@ -136,12 +138,8 @@ diaSeleccionados.push(divDia);
 console.log(diaSeleccionados);
         })
         
-        
-        // semana.find(domingo => domingo == "diaOcupado");
-        
     }) 
     };
-
 
 const semana = [ "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo",
 ];
