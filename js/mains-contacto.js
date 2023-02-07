@@ -63,8 +63,11 @@ parseoCortina.forEach((cortina) => {
 const thUnidades = document.createElement("tr");
 
 const inputNumber = document.createElement("input");
+const inputName = document.createElement("button");
 inputNumber.type = "number";
 inputNumber.value = 0;
+inputName.type = "submit";
+inputName.value = "Aceptar";
 inputNumber.addEventListener("change", () =>{
 
 modificarCarrito(cortina, inputNumber.value);
@@ -72,6 +75,7 @@ console.log(carrito);
 });
 thUnidades.innerHTML = "";
 thUnidades.append(inputNumber);
+thUnidades.append(inputName);
 tr.append(thUnidades);
 datos.append(tr);
 
