@@ -230,8 +230,50 @@ h3 {
 
 #contenedor-js {
   border: 1px solid black;
-  border-collapse: collapse;
+  border-collapse: separate;
   padding: 1;
+  width: 500px;
+  height: 300px;
+}
+#contenedor-js tr th {
+  border: 1px solid black;
+}
+
+#carrito {
+  border: 1px solid black;
+  border-collapse: separate;
+  padding: 1;
+  width: 500px;
+  height: 300px;
+}
+#carrito tr th {
+  border: 1px solid black;
+}
+
+.semana {
+  display: flex;
+  justify-content: center;
+}
+.semana .diaLibre {
+  background-color: green;
+}
+.semana .diaOcupado {
+  background-color: red;
+}
+
+.dia {
+  border: 1px solid black;
+  width: 70px;
+  height: 70px;
+  margin: 0.5rem;
+}
+
+
+.diaOcupado {
+  background-color: red;
+}
+.dia-libre {
+  background-color: green;
 }
 
 header nav {

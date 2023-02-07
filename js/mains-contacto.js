@@ -99,25 +99,52 @@ const tbodyCarrito = document.querySelector("#carrito tbody");
 renderizarProductos();
 //por que solo me toma el valor en toldo, y como hago para que no se repita??????
 
-const semana = [ 1, 1, 1, 1, 1, 1, 1
-];
 
+
+
+
+Toastify({
+    text: "Tambien podes pagar por Mercado Pago haciendo click aqui!",
+    duration: 5000,
+    destination: "https://www.mercadopago.com.ar/home",
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    onClick: function(){} // Callback after click
+}).showToast();
+
+
+
+const divSemana = document.querySelector(".semana")
 function crearDias() {
-semana.forEach((cadaDia) =>{
-const divCadaDia = document.createElement ("div");
-divCadaDia.className = "semana";
+    semana.forEach((cadaDia) =>{
+        console.log(cadaDia);
+        const divDia = document.createElement("div");
+        divDia.className = "dia dia-libre";
+        divDia.innerText = cadaDia
+        divSemana.append(divDia);
 
-cadaDia.forEach(() => {
-const divDia = document.createElement("div");
-divDia.className = "dia";
-divDia.addEventListener("click", () => {
-divDia.className = "dia-libre";
-});
-divCadaDia.append(divDia);
-});
-});
+        
+        divDia.addEventListener("click", () =>{
+divDia.classList.toggle("diaOcupado")
+diaSeleccionados.push(divDia);
+console.log(diaSeleccionados);
+        })
+        
+        
+        // semana.find(domingo => domingo == "diaOcupado");
+        
+    }) 
+    };
 
-};
+
+const semana = [ "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo",
+];
+const diaSeleccionados = [];
+
 crearDias();
-
-//sadk

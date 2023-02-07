@@ -226,8 +226,59 @@ h3{
     }
     
 }
+
 #contenedor-js{
+    border: 1px solid black;
+    border-collapse: separate;
+    padding: 1;
+    width: 500px;
+    height: 400px;
+    tr{
+        th{
+            border: 1px solid black;
+            
+        }
+    }
+}
+#carrito{
+    border: 1px solid black;
+    border-collapse: separate;
+    padding: 1;
+    width: 500px;
+    height: 300px;
+    tr{
+        th{
+            border: 1px solid black;
+            
+        }
+    }
+}
+.semana{
+    display: flex;
+    justify-content: center;
+    .diaLibre{
+        background-color: green;
+    }
+    .diaOcupado{
+        background-color: red;
+    }
+}
+.dia{
 border: 1px solid black;
-border-collapse: collapse;
-padding: 1;
+width: 35px;
+height: 35px;
+margin: 0.5rem;
+.dia-ocupado{
+    background-color: red;
+}
+.dia-libre{
+    background-color: green;
+}
+
+}
+.dia-ocupado{
+    background-color: red;
+}
+.dia-libre{
+    background-color: green;
 }
