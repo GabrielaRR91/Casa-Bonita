@@ -1,31 +1,21 @@
 class Cortina {
-    constructor(id, producto, precio, stock){
-    this.id = id;
-    this.producto = producto;
-    this.precio = precio;
-    this.stock = stock;
-}
-};
-// //     sumaIva(){
-// //         this.precio = this.precio * 1.21;
-// //     }
-// // }
-// // for (const producto of carrito) {
-// //     producto.sumaIva();
-// }
-
-const carrito = [];
-
-// Dejo el array con los productos, la clase constructora solo sirve para cuando ingresas productos con interface del usuarios
-const cortinas = [ 
-{id:1, producto: "inteligentes",precio: 50000,stock: 10}, 
-{id:2, producto: "roll",precio: 5000,stock: 100},
-{id:3, producto: "verticales",precio: 10500,stock: 0},
-{id:4, producto: "orientales",precio: 150000,stock: 5},
-{id:5, producto: "toldos",precio: 250000,stock: 15},  
+        constructor(id, producto, precio, stock){
+        this.id = id;
+        this.producto = producto;
+        this.precio = precio;
+        this.stock = stock;
+    }
+    };
+    
+    const cortinas = [ 
+    new Cortina (1,"inteligentes", 50000, 10), 
+    new Cortina (2,"roll", 5000, 100),
+    new Cortina (3,"verticales", 10500, 200),
+    new Cortina (4,"orientales", 150000, 5),
+    new Cortina (5,"toldos", 250000, 15),  
 ];
 
-
+const carritos = [];
 
 // Guardamos los archivos en el localStorage y los recuperas 
 localStorage.setItem("cortinas5", JSON.stringify(cortinas));
@@ -33,35 +23,43 @@ const arrayLs = localStorage.getItem("cortinas5");
 const parseoCortina = JSON.parse(arrayLs);
 console.log(parseoCortina)
 
-
 const datos = document.querySelector('#datos') // Tomo el elemento del html donde voy a insertar los datos para renderizar 
 
-
 function modificarCarrito (nombres, cantidad){
-const indiceCarrito = carrito.findIndex((productoCarrito) => productoCarrito.producto === nombres.producto);
+    
+const indiceCarrito = carritos.findIndex((productoCarrito) => productoCarrito.producto === nombres.producto);
 if(indiceCarrito === -1){
-    carrito.push({
-        nombre: nombres.producto,
+    carritos.push({
+        producto: nombres.producto,
         cantidad: cantidad,
     });
 }else{
-    carrito[indiceCarrito].cantidad = cantidad;
+    carritos[indiceCarrito].cantidad = cantidad;
 }
+console.log(carritos);
 renderizarCarrito();
-}
+guardarCarritoEnLS();
+};
+
 
 function renderizarProductos (){
-
+    datos.innerHTML = "";
 // Por cada elemento que tiene el array tomado del localStorage cortina se va a insertar el html con los datos asignados aquí 
 parseoCortina.forEach((cortina) => {
-    const tr = document.createElement("tr");
-    datos.innerHTML += 
-    `<th>${cortina.producto}</th>
-    <th>$${cortina.precio}</th>
-    <th>${cortina.stock}</th>`
+    
+const tr = document.createElement("tr");
 
-const thUnidades = document.createElement("tr");
+const tdNombre = document.createElement("td");
+tdNombre.innerHTML =`${cortina.producto}`;
 
+
+const tdPrecio = document.createElement("td");
+tdPrecio.innerHTML = `${cortina.precio}`;
+
+const tdStock = document.createElement("td");
+tdStock.innerHTML = `${cortina.stock}`;
+
+const thUnidades = document.createElement("td");
 const inputNumber = document.createElement("input");
 const inputName = document.createElement("button");
 inputNumber.type = "number";
@@ -71,39 +69,69 @@ inputName.value = "Aceptar";
 inputNumber.addEventListener("change", () =>{
 
 modificarCarrito(cortina, inputNumber.value);
-console.log(carrito);
+console.log(carritos);
 });
+
 thUnidades.innerHTML = "";
+
 thUnidades.append(inputNumber);
 thUnidades.append(inputName);
+tr.append(tdNombre);
+tr.append(tdPrecio);
+tr.append(tdStock);
 tr.append(thUnidades);
+
 datos.append(tr);
 
 
 })
 };
+
+function guardarCarritoEnLS () {
+    localStorage.setItem("carrito", JSON.stringify(carritos));
+    
+    };
+
+
 function renderizarCarrito(){
+
 tbodyCarrito.innerHTML = "";
-carrito.forEach((productoCarrito) => {
+
+carritos.forEach((productoCarrito) => {
 
     const tr = document.createElement("tr");
-    carrito.innerHTML += 
-    `<th>${productoCarrito.producto}</th>`
+    // carritos.innerHTML += 
+    // `<tr>${productoCarrito.nombres}</tr>
+    // <tr>${productoCarrito.cantidad}}</tr>`
 
-const thUnidades = document.createElement("tr");
+// const tdNombre = document.createElement("td");
+// tdNombre.innerHTML = `${productoCarrito.nombres}`;
+const tdNombre = document.createElement("td");
+tdNombre.innerHTML =`${productoCarrito.producto}`;
 
 
+const tdCantidad = document.createElement("td");
+tdCantidad.innerHTML = `${productoCarrito.cantidad}`;
 
-tr.append(thUnidades);
+// const thUnidades = document.createElement("tr");
+
+tr.append(tdNombre);
+tr.append(tdCantidad);
+// tr.append(thUnidades);
 dat.append(tr);
+tbodyCarrito.append(tr);
+// tbodyDat.append(tr);
+console.log(productoCarrito);
 
 
 })
+
 };
 
 const tbodyCarrito = document.querySelector("#carrito tbody");
 renderizarProductos();
-//por que solo me toma el valor en toldo, y como hago para que no se repita??????
+// //por que solo me toma el valor en toldo, y como hago para que no se repita??????
+
 
 
 
