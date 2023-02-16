@@ -1,0 +1,31 @@
+[
+    {
+        "imagen": "/asset/img/claudia.jpg",
+        "nombre": "Claudia",
+        "edad": 30,
+        "email": "claudipa@gmail.com",
+        "puesto": "Administrativa"
+    },
+    {
+        "imagen": "/asset/img/cristian3.jpg",
+        "nombre": "Cristian",
+        "edad": 28,
+        "email": "cris@gmail.com",
+        "puesto": "Ventas"
+    },
+    {
+        "imagen": "/asset/img/mirta.jpg",
+        "nombre": "Mirta",
+        "edad": 31,
+        "email": "mirtita@gmail.com",
+        "puesto": "Ventas"
+    },
+    {
+        "imagen": "/asset/img/franco22.jpg",
+        "nombre": "Franco",
+        "edad": 35,
+        "email": "franco@gmail.com",
+        "puesto": "Encargado"
+    }
+
+]

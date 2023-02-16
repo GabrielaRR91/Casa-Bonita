@@ -1,160 +1,3 @@
-// //Nunca fue esta
-// class cortina {
-//     constructor(producto, precio, stock){
-//     this.producto = producto;
-//     this.precio = precio;
-//     this.stock = stock;
-// }
-// }
-
-// const cortinas = [ 
-//     new Cortina ("inteligentes".toLowerCase(), 50000, 10), 
-//     new Cortina ("roll".toLowerCase(), 5000, 100),
-//     new cortina ("verticales".toLowerCase(), 10500, 200),
-//     new cortina ("orientales".toLowerCase(), 150000, 5),
-//     new cortina ("toldos".toLowerCase(), 250000, 15),  
-// ];
-
-// const cortinaActual = [cortinas]
-
-// function cortinaExiste (producto){
-//     let encontrado = false;
-//     for (const cortina of cortinas){
-//         if (cortinas.producto === producto){
-//             encontrado = true;
-//             break;
-//         }
-//     }
-//     return encontrado;
-// }
-
-// function calcularStockInteligentes (){
-//     for(const cortinas of cortina){
-
-//         let restaStock = stock - cantidadDeseada;
-        
-//         if(restaStock <= 10){
-//             alert(`Contamos actualmente con stock`)
-//         }
-//         else{
-//             alert(`Querido cliente, actualmente no contamos con ese stock en nuestra sucursal, los dias 10 de cada mes ingresa nueva menrcaderia, por favor vuelva a intentarlo o deje su numero al finalizar para que nos comuniquemos con usted`);
-//         }};
-//         return restaStock;
-// }
-// function calcularStockRoll (stock){
-//     let restaStock = stock - cantidadDeseada
-    
-//     if(restaStock <= 100){
-//         alert(`Contamos actualmente con stock`)
-//     }else{
-//         alert(`Querido cliente, actualmente no contamos con ese stock en nuestra sucursal, los dias 10 de cada mes ingresa nueva menrcaderia, por favor vuelva a intentarlo o deje su numero al finalizar para que nos comuniquemos con usted`);
-//     }
-//     return restaStock;
-// }
-// function calcularStockVerticales (stock){
-//     let restaStock = stock - cantidadDeseada
-    
-//     if(restaStock <= 200){
-//         alert(`Contamos actualmente con stock`)
-//     }
-//     else{
-//         alert(`Querido cliente, actualmente no contamos con ese stock en nuestra sucursal, los dias 10 de cada mes ingresa nueva menrcaderia, por favor vuelva a intentarlo o deje su numero al finalizar para que nos comuniquemos con usted`);
-//     }
-//     return restaStock;
-// }
-// function calcularStockOrientales (stock){
-//     let restaStock = stock - cantidadDeseada
-    
-//     if(restaStock <= 5){
-//         alert(`Contamos actualmente con stock`)
-//     }
-//     else{
-//         alert(`Querido cliente, actualmente no contamos con ese stock en nuestra sucursal, los dias 10 de cada mes ingresa nueva menrcaderia, por favor vuelva a intentarlo o deje su numero al finalizar para que nos comuniquemos con usted`);
-//     }
-//     return restaStock;
-// }
-// function calcularStockToldos (stock){
-//     let restaStock = stock - cantidadDeseada
-    
-//     if(restaStock <= 15){
-//         alert(`Contamos actualmente con stock`)
-//     }else{
-//         alert(`Querido cliente, actualmente no contamos con ese stock en nuestra sucursal, los dias 10 de cada mes ingresa nueva menrcaderia, por favor vuelva a intentarlo o deje su numero al finalizar para que nos comuniquemos con usted`);
-//     }
-//     return restaStock;
-// }
-// let elegirCortina = "";
-// let cantidadDeseada = 0;
-
-
-// while(elegirCortina !== "finalizar"){
-
-// let cantidadDeseada = parseInt(prompt("Ingrese la cantidad que desea de esa cortina para verificar stock"));
-
-// const elegirCortina = prompt("Ingrese que producto desea para verificar stock, inteligente, roll, vertical, oriental o toldos (Si desea salir por favor introduzca finalizar)");
-
-//         switch(elegirCortina){
-
-//         case "inteligente":
-        
-//         calcularStockInteligentes (restaStock);
-//         alert();
-//         alert(calcularStockInteligentes);
-
-//         break;
-    
-//         case "roll":
-        
-//         calcularStockRoll();
-//         alert();
-//         alert(calcularStockInteligentes);
-//         break;
-    
-//         case "vertical":
-        
-//         calcularStockVerticales();  
-//         alert(cortinaExiste);
-//         alert(calcularStockInteligentes);
-    
-//         break;
-
-//         case "oriental":
-        
-//         calcularStockOrientales();
-//         alert();
-//         alert(calcularStockInteligentes);
-
-//         break;
-
-//         case "toldos":
-        
-//         calcularStockToldos();
-//         alert();
-//         alert(calcularStockInteligentes);
-
-//         break;
-    
-//         default : 
-//             caracteristicas = prompt("Error, por favor introduzca inteligentes, roll, vertical, oriental o toldos, de lo contrario introduzca finalizar para salir.");
-//     } 
-// }
-// const iva = cortinas.map((cortina) => {
-        
-//     return (cortina.precio = cortina.precio + (21 * cortina.precio) / 100);
-// });  
-
-// console.log (iva);
-
-//* Arrays medios de pago /
-
-
-
-// productos con iva/
-
-// const cortinasConIva = cortinas.reduce(acc[],cortinas) => {
-//     cortinas.precio = cortinas.precio +(21 * producto.precio) / 100;
-//     acc.push(cortinasConIva)
-// }
 
 // saludo inicio
 
@@ -243,97 +86,8 @@
 // }
 
 
-// //SegundaPre Entrega
-// class cortina {
-//     constructor(id, producto, precio, stock){
-//     this.id = id;
-//     this.producto = producto;
-//     this.precio = precio;
-//     this.stock = stock;
-//     }
-// }
+// //                              TerceraPre Entrega
 
-// const carrito = [];
-
-// const cortinas = [ 
-//     {id:1, producto: "inteligentes",precio: 50000,stock: 10}, 
-//     {id:2, producto: "roll",precio: 5000,stock: 100},
-//     {id:3, producto: "verticales",precio: 10500,stock: 0},
-//     {id:4, producto: "orientales",precio: 150000,stock: 5},
-//     {id:5, producto: "toldos",precio: 250000,stock: 15},  
-// ];
-// const arrayCortinas = [cortinas]
-
-
-// function mostrarMenuPrincipal(){
-
-//     //ELEGIR PRODUCTO
-//     const elegirCortina = parseInt(prompt("Ingrese que producto desea para verificar stock, 1- inteligente, 2- roll, 3- vertical, 4- oriental o 5- toldos"));
-    
-//     //SOLICITAR CANTIDAD
-//     const cantidad = parseInt(prompt(`Que cantidad de producto desea`));
-//     console.log(cantidad);
-
-//     //BUSCAR PRODUCTO
-//     const productoElegido = cortinas.find(producto => producto.id === elegirCortina) 
-//     console.log(elegirCortina, cantidad)
-
-// alert(`El producto elegido es cortina ${productoElegido.producto}`);
-
-// alert(`El precio del producto es ${productoElegido.precio}`);
-
-// alert(`El stock del producto es ${productoElegido.stock}`);
-
-// const hayStock = calcularStock(productoElegido.stock, cantidad);
-
-//         if(hayStock > 0){
-//             alert(`Contamos actualmente con ${hayStock}`)
-//         }else{
-//         alert(`Querido cliente, actualmente no contamos con ese stock en nuestra sucursal, los dias 10 de cada mes ingresa nueva menrcaderia, por favor vuelva a intentarlo o deje su numero al finalizar para que nos comuniquemos con usted`);
-//         };
-//     solicitarCompra(productoElegido);
-//     //push?
-//     }
-        
-    
-// function solicitarCompra(producto){
-//     //array carrito?
-//     for(const carrito of cortinas){
-
-// productoElegido = "";
-// const compra = prompt(`Desea comprar ${productoElegido}`);
-
-//             if(compra != "si".toLowerCase){
-//                 carrito.push(...productoElegido);
-//                 const email = prompt("Ingrese su email");
-//                 alert(`Gracias por elegirnos, uno de nuestros representantes se comunicara con usted a la brevedad para finalizar la compra. Esperamos vuelva pronto`);
-//                 saludo();
-//                 //salir
-//                 }else if (compra === "no"){
-//                     alert(`Muchas gracias por visitar nuestra pagina`);
-//                 }else{
-//                     alert(`Error`);
-//                     solicitarCompra(producto);
-//                 }
-//             }
-//         }
-
-// function saludo(email){
-//     alert(`Hasta pronto!`);
-//     return;
-// }
-
-// function calcularStock (stock, cantidad){
-//         console.log(stock)
-//         console.log(cantidad)
-
-//         let restaStock = stock - cantidad;
-//         return restaStock;
-// }
-
-// mostrarMenuPrincipal();
-
-//* anda hasta por ahi nomas
 // class Cortina {
 //     constructor(id, producto, precio, stock){
 //     this.id = id;
@@ -343,19 +97,15 @@
 // }
 // };
 
-
-// const carrito = [];
-
-// // Dejo el array con los productos, la clase constructora solo sirve para cuando ingresas productos con interface del usuarios
 // const cortinas = [ 
-// {id:1, producto: "inteligentes",precio: 50000,stock: 10}, 
-// {id:2, producto: "roll",precio: 5000,stock: 100},
-// {id:3, producto: "verticales",precio: 10500,stock: 0},
-// {id:4, producto: "orientales",precio: 150000,stock: 5},
-// {id:5, producto: "toldos",precio: 250000,stock: 15},  
+// new Cortina (1,"inteligentes", 50000, 10), 
+// new Cortina (2,"roll", 5000, 100),
+// new Cortina (3,"verticales", 10500, 200),
+// new Cortina (4,"orientales", 150000, 5),
+// new Cortina (5,"toldos", 250000, 15),  
 // ];
 
-
+// const carritos = [];
 
 // // Guardamos los archivos en el localStorage y los recuperas 
 // localStorage.setItem("cortinas5", JSON.stringify(cortinas));
@@ -363,76 +113,171 @@
 // const parseoCortina = JSON.parse(arrayLs);
 // console.log(parseoCortina)
 
-
 // const datos = document.querySelector('#datos') // Tomo el elemento del html donde voy a insertar los datos para renderizar 
 
-
 // function modificarCarrito (nombres, cantidad){
-// const indiceCarrito = carrito.findIndex((productoCarrito) => productoCarrito.producto === nombres.producto);
+
+// const indiceCarrito = carritos.findIndex((productoCarrito) => productoCarrito.producto === nombres.producto);
 // if(indiceCarrito === -1){
-//     carrito.push({
-//         nombre: nombres.producto,
-//         cantidad: cantidad,
-//     });
+// carritos.push({
+//     producto: nombres.producto,
+//     cantidad: cantidad,
+// });
 // }else{
-//     carrito[indiceCarrito].cantidad = cantidad;
+// carritos[indiceCarrito].cantidad = cantidad;
 // }
+// console.log(carritos);
 // renderizarCarrito();
-// }
+// guardarCarritoEnLS();
+// };
 
 
-// // function renderizarProductos (){
+// function renderizarProductos (){
+// datos.innerHTML = "";
+// // Por cada elemento que tiene el array tomado del localStorage cortina se va a insertar el html con los datos asignados aquí 
+// parseoCortina.forEach((cortina) => {
 
-// // // Por cada elemento que tiene el array tomado del localStorage cortina se va a insertar el html con los datos asignados aquí 
-// // parseoCortina.forEach((cortina) => {
-// //     const tr = document.createElement("tr");
-// //     datos.innerHTML += 
-// //     `<th>${cortina.producto}</th>
-// //     <th>$${cortina.precio}</th>
-// //     <th>${cortina.stock}</th>`
+// const tr = document.createElement("tr");
 
-// // const thUnidades = document.createElement("tr");
-
-// // const inputNumber = document.createElement("input");
-// // const inputName = document.createElement("button");
-// // inputNumber.type = "number";
-// // inputNumber.value = 0;
-// // inputName.type = "submit";
-// // inputName.value = "Aceptar";
-// // inputNumber.addEventListener("change", () =>{
-
-// // modificarCarrito(cortina, inputNumber.value);
-// // console.log(carrito);
-// // });
-// // thUnidades.innerHTML = "";
-// // thUnidades.append(inputNumber);
-// // thUnidades.append(inputName);
-// // tr.append(thUnidades);
-// // datos.append(tr);
+// const tdNombre = document.createElement("td");
+// tdNombre.innerHTML =`${cortina.producto}`;
 
 
-// // })
-// // };
-// function renderizarCarrito(){
-// tbodyCarrito.innerHTML = "";
-// carrito.forEach((productoCarrito) => {
+// const tdPrecio = document.createElement("td");
+// tdPrecio.innerHTML = `${cortina.precio}`;
 
-//     const tr = document.createElement("tr");
-//     carrito.innerHTML += 
-//     `<th>${productoCarrito.producto}</th>`
+// const tdStock = document.createElement("td");
+// tdStock.innerHTML = `${cortina.stock}`;
 
-// const thUnidades = document.createElement("tr");
+// const thUnidades = document.createElement("td");
+// const inputNumber = document.createElement("input");
+// const inputName = document.createElement("button");
+// inputNumber.type = "number";
+// inputNumber.value = 0;
+// inputName.type = "submit";
+// inputName.value = "Aceptar";
+// inputNumber.addEventListener("change", () =>{
 
+// modificarCarrito(cortina, inputNumber.value);
+// console.log(carritos);
+// });
 
+// thUnidades.innerHTML = "";
 
+// thUnidades.append(inputNumber);
+// thUnidades.append(inputName);
+// tr.append(tdNombre);
+// tr.append(tdPrecio);
+// tr.append(tdStock);
 // tr.append(thUnidades);
-// dat.append(tr);
+
+// datos.append(tr);
 
 
 // })
 // };
 
+// function guardarCarritoEnLS () {
+// localStorage.setItem("carrito", JSON.stringify(carritos));
+
+// };
+
+
+// function renderizarCarrito(){
+
+// tbodyCarrito.innerHTML = "";
+
+// carritos.forEach((productoCarrito) => {
+
+// const tr = document.createElement("tr");
+// // carritos.innerHTML += 
+// // `<tr>${productoCarrito.nombres}</tr>
+// // <tr>${productoCarrito.cantidad}}</tr>`
+
+// // const tdNombre = document.createElement("td");
+// // tdNombre.innerHTML = `${productoCarrito.nombres}`;
+// const tdNombre = document.createElement("td");
+// tdNombre.innerHTML =`${productoCarrito.producto}`;
+
+
+// const tdCantidad = document.createElement("td");
+// tdCantidad.innerHTML = `${productoCarrito.cantidad}`;
+
+// // const thUnidades = document.createElement("tr");
+
+// tr.append(tdNombre);
+// tr.append(tdCantidad);
+// // tr.append(thUnidades);
+// dat.append(tr);
+// tbodyCarrito.append(tr);
+// // tbodyDat.append(tr);
+// console.log(productoCarrito);
+
+
+// })
+
+// };
+
 // const tbodyCarrito = document.querySelector("#carrito tbody");
 // renderizarProductos();
-// //por que solo me toma el valor en toldo, y como hago para que no se repita??????
+// // //por que solo me toma el valor en toldo, y como hago para que no se repita??????
 
+
+
+
+
+
+// Toastify({
+// text: "Tambien podes pagar por Mercado Pago haciendo click aqui!",
+// duration: 5000,
+// destination: "https://www.mercadopago.com.ar/home",
+// newWindow: true,
+// close: true,
+// gravity: "top", // `top` or `bottom`
+// position: "right", // `left`, `center` or `right`
+// stopOnFocus: true, // Prevents dismissing of toast on hover
+// style: {
+// background: "linear-gradient(to right, #00b09b, #96c93d)",
+// },
+// onClick: function(){} // Callback after click
+// }).showToast();
+
+
+
+// const divSemana = document.querySelector(".semana")
+// function crearDias() {
+// semana.forEach((cadaDia) =>{
+//     console.log(cadaDia);
+//     const divDia = document.createElement("div");
+//     divDia.className = cadaDia === "domingo" || cadaDia === "miercoles" ? "diaOcupado" : "dia dia-libre";
+//     divDia.innerText = cadaDia
+//     divSemana.append(divDia);
+
+    
+//     divDia.addEventListener("click", () =>{
+// divDia.classList.toggle("diaOcupado")
+// diaSeleccionados.push(divDia);
+// console.log(diaSeleccionados);
+//     })
+    
+// }) 
+// };
+
+// const semana = [ "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo",
+// ];
+// const diaSeleccionados = [];
+
+// crearDias();
+
+//*                                  el del index
+// nuevosClientes = [];
+
+// const clientes = ["Matias", "Gabriela",];
+// const nuevosClientes = prompt("Bienvenido, por favor introduzca su nombre y apellido para quedar registrado en nuestra base de datos.");
+// alert(`${nuevosClientes}, gracias por visitar casa bonita, estamos para ayudarle`)
+
+// console.log(clientes.length);
+// clientes.push(nuevosClientes);
+// console.log(clientes);
+
+// const contenedorEmpleados = document.createElement('contenedorEmpleados');

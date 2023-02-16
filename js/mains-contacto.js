@@ -8,12 +8,12 @@ class Cortina {
     };
     
     const cortinas = [ 
-    new Cortina (1,"inteligentes", 50000, 10), 
-    new Cortina (2,"roll", 5000, 100),
-    new Cortina (3,"verticales", 10500, 200),
-    new Cortina (4,"orientales", 150000, 5),
-    new Cortina (5,"toldos", 250000, 15),  
-];
+        new Cortina (1,"inteligentes", 50000, 10), 
+        new Cortina (2,"roll", 5000, 100),
+        new Cortina (3,"verticales", 10500, 200),
+        new Cortina (4,"orientales", 150000, 5),
+        new Cortina (5,"toldos", 250000, 15),  
+        ];
 
 const carritos = [];
 

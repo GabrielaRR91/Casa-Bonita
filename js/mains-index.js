@@ -1,9 +1,33 @@
-// nuevosClientes = [];
+async function obtenerEmpleados () {
+    const response = await fetch("/js/empleados.json");
+    const empleados = await response.json();
+    
+    console.log(empleados);
 
-// const clientes = ["Matias", "Gabriela",];
-// const nuevosClientes = prompt("Bienvenido, por favor introduzca su nombre y apellido para quedar registrado en nuestra base de datos.");
-// alert(`${nuevosClientes}, gracias por visitar casa bonita, estamos para ayudarle`)
+    renderizarEmpleados(empleados);
+};
 
-// console.log(clientes.length);
-// clientes.push(nuevosClientes);
-// console.log(clientes);
+function renderizarEmpleados (empleados) {
+    for(const empleado of empleados){
+
+        const div = document.createElement("div");
+        div.className = "empleados";
+    
+        const img = document.createElement("img");
+        img.src = empleado.imagen;
+    
+        const h2 = document.createElement("h2");
+        h2.innerHTML = empleado.nombre;
+
+        const p = document.createElement("p");
+        p.innerHTML = empleado.puesto;
+
+        contenedorEmpleados.append(div);
+        div.append(img, h2, p);
+    }
+};
+
+const contenedorEmpleados = document.getElementById("contenedorEmpleados");
+const empleados = obtenerEmpleados();
+
+
